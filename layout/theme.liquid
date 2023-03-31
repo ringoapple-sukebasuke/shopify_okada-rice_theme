@@ -10,6 +10,9 @@
   {{ content_for_header }} <!-- Header hook for plugins -->
   {{ 'application.css' | asset_url | stylesheet_tag }}
   {{ 'application.js' | asset_url | script_tag }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   {{ 'style.css' | asset_url | stylesheet_tag }}
 
 </head>
@@ -27,18 +30,22 @@
     {% endif %}
   {% endfor %}
 
+
   <a href="/cart">cart</a>
 
+
   {% if shop.customer_accounts_enabled %}
-    {% if customer %}
+  {% if customer %}
       <a href="/account">account</a>
       {{ 'log out'  | customer_logout_link }}
-    {% else %}
+      {% else %}
       {{ 'log in ' | customer_login_link }}
       {{ 'register' | customer_register_link }}
     {% endif %}
   {% endif %}
 
+
+  {% render 'header' %}
   <main role="main">
     {{ content_for_layout }}
   </main>

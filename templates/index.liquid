@@ -1,11 +1,19 @@
-{% for product in collections.frontpage.products limit:4 %}
-  <div>
-    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-    {{ product.price | money }}
-    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-    <a href="{{ product.url | within: collection }}">
-      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-    </a>
-    <h1>こんにちは</h1>
-  </div>
-{% endfor %}
+<div class="top_banner"><img src="{{'field.jpg' | asset_url}}"></div>
+
+<h1 class="site_title">RiceSelect - Discover the World of Rice</h1>
+<div class="site_description">
+  ようこそ「RiceSelect」へ！当サイトでは、日本全国から厳選された美味しいお米を取り揃えております。<br>新潟のコシヒカリ、山形のつや姫、福岡の光琳、奈良の丹波産黒米など、地域特有のお米をお手軽な価格でお届けします。また、雑穀米や無洗米、おこわなどの特別なお米もご用意しておりますので、お米好きの皆様にぴったりの一品が見つかることでしょう。<br>新鮮で美味しいお米をお探しの方は、ぜひ「RiceSelect」でお買い求めください！お米を楽しむレシピや料理のコツもご紹介していますので、お米を使った美味しい食卓をお楽しみいただけます。
+</div>
+
+<ul class="top_product_area">
+  {% for product in collections.frontpage.products%}
+    <li class="top_content">
+      <a href="{{ product.url | within: collection }}">
+        <img src="{{ product.featured_image.src | img_url: 'master' }}" alt="{{ product.featured_image.alt | escape }}">
+        <div class="product_title">{{ product.title }}</div>
+        <div class="product_price">{{ product.price | money }}</div>
+        {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

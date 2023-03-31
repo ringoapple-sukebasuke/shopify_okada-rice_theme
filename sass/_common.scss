@@ -5,14 +5,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 body, h1, h2, h3, h4, h5, a, b, p, span, button, label {
   font-family: Noto Sans JP, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   color: rgb(62, 46, 25);
 }
 
@@ -22,40 +22,4 @@ li {
 
 a {
   text-decoration: none;
-}
-
-.top_banner img {
-  width: 100%;
-  max-width: 1300px;
-}
-
-.site_title {
-  font-size: 30px;
-  margin: 5% 20% 5%;
-}
-
-.site_description {
-  margin: 0 10%;
-}
-
-.top_product_area {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display: flex;
-  margin: 5%;
-}
-.top_product_area .top_content {
-  width: 30%;
-  margin-bottom: 30px;
-}
-.top_product_area .top_content a .product_title {
-  font-size: 14px;
-  color: grey;
-}
-.top_product_area .top_content a .product_price {
-  font-size: 20px;
-  color: grey;
-}
-.top_product_area .top_content a img {
-  width: 100%;
 }
