@@ -4,8 +4,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
   font-family: "Noto Sans JP", sans-serif;
+  color: #EE8F4F;
 }
 
 body, h1, h2, h3, h4, h5, a, b, p, span, button, label {
@@ -28,13 +28,16 @@ a:hover {
 }
 
 .header {
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 20px 0;
   text-align: center;
+  background-color: #F6D0B0;
 }
 .header li {
   margin-right: 10px;
   display: inline;
+}
+.header li a {
+  color: #FFF;
 }
 
 .top_banner img {
@@ -56,6 +59,7 @@ a:hover {
   justify-content: space-between;
   display: flex;
   margin: 5%;
+  background-color: #F8F4EF;
 }
 .top_product_area .top_content {
   width: 30%;
@@ -76,8 +80,9 @@ a:hover {
 .product_sections {
   max-width: 1080px;
   width: 100%;
-  margin: 0 10%;
+  margin: 5% 10% 0;
   display: flex;
+  background-color: #F8F4EF;
 }
 .product_sections .product_left_section {
   width: 50%;
@@ -141,4 +146,39 @@ a:hover {
   left: 0.8%;
   width: 98.4%;
   height: 94%;
+}
+
+.cart_container {
+  margin: 0 5%;
+}
+.cart_container h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.cart_container form .cart_item_list .flex_wrap {
+  justify-content: space-between;
+  display: flex;
+  background-color: #F8F4EF;
+  width: 100%;
+}
+.cart_container form .cart_item_list .flex_wrap .img_wrap {
+  width: 50%;
+}
+.cart_container form .cart_item_list .flex_wrap .info_wrap {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.cart_container form .cart_item_list .flex_wrap .info_wrap .cart_item_price {
+  font-size: 2em;
+}
+.cart_container form .cart_item_list .flex_wrap .info_wrap .cart_item_remove {
+  background-color: white;
+}
+.cart_container form .cart_item_list .flex_wrap .info_wrap .cart_item_remove a {
+  font-size: 20px;
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  display: block;
 }
