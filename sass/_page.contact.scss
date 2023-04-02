@@ -1,8 +1,27 @@
 .contact_title {
   text-align: center;
   font-size: 2em;
+  margin-top: 40px;
 }
 
 .form_contact {
-  margin: 30px 10% 0;
+  background-color: #F8F4EF;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  label {
+    font-size: 1.5em;
+    color: #EE8F4F;
+    display: block;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  textarea {
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
