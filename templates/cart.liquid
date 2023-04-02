@@ -11,7 +11,7 @@
             </a>
           </div>
           <div class="info_wrap">
-            <div class="cart_item_quentity">
+            <div class="cart_item_quantity">
               <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
             </div>
             <div class="cart_item_price">
@@ -24,10 +24,12 @@
         </li>
       {% endfor %}
     </ul>
-    <div>
-      <p>sub total : {{ cart.total_price | money }}</p>
-      <button type="submit" name="update">Update</button>
-      <button type="submit" name="checkout">Checkout</button>
+    <div class="cart_payment">
+      <p class="total_price"> total : {{ cart.total_price | money }}</p>
+      <div class="button_items">
+        <button class="update_in_cart" type="submit" name="update">更新</button>
+        <button class="checkout_in_cart" type="submit" name="checkout">お支払いへ進む</button>
+      </div>
     </div>
   </form>
 {% else %}
