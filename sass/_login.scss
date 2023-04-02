@@ -1,0 +1,52 @@
+.login_title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.login_content {
+  background-color: #F8F4EF;
+  margin-top: 30px;
+  padding: 20px 0;
+  text-align: center;
+  label {
+    font-size: 1.3em;
+    color: #EE8F4F;
+    display: block;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .sign_in {
+    width: 200px;
+    height: 30px;
+    background-color: #EE8F4F;
+    color: white;
+    font-weight: bold;
+    border: #EE8F4F;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .forget_pw {
+    margin-top: 50px;
+    h2 {
+      margin: 12px 0;
+    }
+    label {
+      color: black;
+      font-size: 15px;
+    }
+    .submit_button {
+      width: 200px;
+      height: 30px;
+      background-color: white;
+      border: 2px solid #eee;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

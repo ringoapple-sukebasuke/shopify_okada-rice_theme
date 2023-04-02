@@ -1,28 +1,33 @@
 <!-- /templates/customers/login.liquid -->
 
-<h2>Login</h2>
-{% form 'customer_login' %}
+<h2 class="login_title">Login</h2>
+<div class="login_content">
+  {% form 'customer_login' %}
 
-{{ form.errors | default_errors }}
+  {{ form.errors | default_errors }}
 
-<label for="customer_email">Email Address</label>
-<input type="email" name="customer[email]" />
+  <label for="customer_email">メールアドレス</label>
+  <input type="email" name="customer[email]" />
 
-<label for="customer_password">Password</label>
-<input type="password" name="customer[password]" />
+  <label for="customer_password">パスワード</label>
+  <input type="password" name="customer[password]" />
 
-<input type="submit" value="Sign In" />
+  <input class="sign_in" type="submit" value="Sign In" />
 
-{% endform %}
+  {% endform %}
 
-<h2>Forgot Password</h2>
-{% form 'recover_customer_password' %}
+  <div class="forget_pw">
+    <h2>パスワードを忘れた方</h2>
+    {% form 'recover_customer_password' %}
 
-{{ form.errors | default_errors }}
+    {{ form.errors | default_errors }}
 
-<label for="customer_email">Email Address</label>
-<input type="email" name="email" />
+    <label for="customer_email">メールアドレス</label>
+    <input type="email" name="email" />
 
-<input type="submit" value="Submit" />
+    <input class="submit_button" type="submit" value="Submit" />
 
-{% endform %}
+    {% endform %}
+  </div>
+
+</div>
