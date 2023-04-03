@@ -66,7 +66,8 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
-  margin: 5%;
+  margin: 5% auto;
+  max-width: 1300px;
   background-color: #F8F4EF;
 }
 .top_product_area .top_content {
@@ -159,6 +160,7 @@ a:hover {
 
 .cart_container {
   margin: 0 5%;
+  max-width: 1300px;
 }
 .cart_container h1 {
   font-size: 3em;
@@ -209,7 +211,7 @@ a:hover {
   text-align: center;
 }
 .cart_container form .cart_payment .button_items {
-  margin-top: 30px;
+  margin: 30px 0;
   text-align: center;
 }
 .cart_container form .cart_payment .button_items .update_in_cart {
@@ -242,22 +244,24 @@ a:hover {
   padding-top: 20px;
   text-align: center;
 }
-.form_contact label {
+.form_contact .form_container label {
   font-size: 1.3em;
   color: #EE8F4F;
   display: block;
   margin-bottom: 10px;
 }
-.form_contact input {
-  width: 200px;
-  height: 30px;
+.form_contact .form_container input {
+  width: 20%;
+  height: 10%;
   margin-bottom: 20px;
 }
-.form_contact textarea {
+.form_contact .form_container textarea {
   display: block;
   margin: 0 auto 20px;
+  width: 20%;
+  height: 40%;
 }
-.form_contact .contact_button {
+.form_contact .form_container .contact_button {
   width: 200px;
   height: 30px;
   background-color: #EE8F4F;
@@ -314,6 +318,40 @@ a:hover {
   height: 30px;
   background-color: white;
   border: 2px solid #eee;
+  display: block;
+  margin: 0 auto;
+}
+
+.register_title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.login_content {
+  background-color: #F8F4EF;
+  margin-top: 30px;
+  padding: 20px 0;
+  text-align: center;
+}
+.login_content label {
+  font-size: 1.3em;
+  color: #EE8F4F;
+  display: block;
+  margin-bottom: 10px;
+}
+.login_content input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.login_content .register_button {
+  width: 200px;
+  height: 30px;
+  background-color: #EE8F4F;
+  color: white;
+  font-weight: bold;
+  border: #EE8F4F;
   display: block;
   margin: 0 auto;
 }

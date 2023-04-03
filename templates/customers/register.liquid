@@ -1,21 +1,27 @@
 <!-- /templates/customers/register.liquid -->
 
-{% form 'create_customer' %}
 
-{{ form.errors | default_errors }}
+<h2 class="register_title">会員登録</h2>
 
-<label for="first_name">First Name</label>
-<input type="text" value="" name="customer[first_name]" size="30" />
+<div class="login_content">
 
-<label for="last_name">Last Name</label>
-<input type="text" value="" name="customer[last_name]" size="30" />
+  {% form 'create_customer' %}
 
-<label for="email">Email Address</label>
-<input type="email" value="" name="customer[email]" size="30" />
+  {{ form.errors | default_errors }}
 
-<label for="password">Password</label>
-<input type="password" value="" name="customer[password]" size="30" />
+  <label for="first_name">First Name</label>
+  <input type="text" value="" name="customer[first_name]" size="30" />
 
-<input type="submit" value="Create" />
+  <label for="last_name">Last Name</label>
+  <input type="text" value="" name="customer[last_name]" size="30" />
 
-{% endform %}
+  <label for="email">Email Address</label>
+  <input type="email" value="" name="customer[email]" size="30" />
+
+  <label for="password">Password</label>
+  <input type="password" value="" name="customer[password]" size="30" />
+
+  <input class="register_button" type="submit" value="Create" />
+
+  {% endform %}
+</div>

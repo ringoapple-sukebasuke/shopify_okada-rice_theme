@@ -16,14 +16,14 @@
   {% endfor %}
 
 <li>
-  <a href="/cart">cart</a>
+  <a href="/cart">カート</a>
 </li>
 
 
   {% if shop.customer_accounts_enabled %}
   {% if customer %}
       <li>
-        <a href="/account">account</a>
+        <a href="/account">アカウント</a>
       </li>
       <li>
         {{ 'ログアウト'  | customer_logout_link }}
