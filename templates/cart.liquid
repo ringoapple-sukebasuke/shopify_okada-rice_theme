@@ -1,6 +1,6 @@
 {% if cart.item_count > 0 %}
 <div class="cart_container">
-  <h1>cart</h1>
+  <h1>カート</h1>
   <form action="/cart" method="post" novalidate>
     <ul class="cart_item_list">
       {% for item in cart.items %}

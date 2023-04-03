@@ -1,0 +1,33 @@
+.collection_title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 30px;
+}
+
+.collection_container {
+  .product_lists {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    margin: 5% auto;
+    max-width: 1300px;
+    background-color: #F8F4EF;
+    .product_content {
+      width: 30%;
+      margin-bottom: 30px;
+      a {
+        .product_title {
+          font-size: 14px;
+          color: grey;
+        }
+        .product_price {
+          font-size: 20px;
+          color: grey;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
