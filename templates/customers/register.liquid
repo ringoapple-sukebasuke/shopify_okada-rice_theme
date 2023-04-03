@@ -9,19 +9,19 @@
 
   {{ form.errors | default_errors }}
 
-  <label for="first_name">First Name</label>
-  <input type="text" value="" name="customer[first_name]" size="30" />
-
-  <label for="last_name">Last Name</label>
+  <label for="last_name">名字</label>
   <input type="text" value="" name="customer[last_name]" size="30" />
 
-  <label for="email">Email Address</label>
+  <label for="first_name">名前</label>
+  <input type="text" value="" name="customer[first_name]" size="30" />
+
+  <label for="email">メールアドレス</label>
   <input type="email" value="" name="customer[email]" size="30" />
 
-  <label for="password">Password</label>
+  <label for="password">パスワード</label>
   <input type="password" value="" name="customer[password]" size="30" />
 
-  <input class="register_button" type="submit" value="Create" />
+  <input class="register_button" type="submit" value="登録" />
 
   {% endform %}
 </div>
