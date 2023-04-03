@@ -9,27 +9,32 @@
   margin-top: 30px;
   padding-top: 20px;
   text-align: center;
-  label {
-    font-size: 1.3em;
-    color: #EE8F4F;
-    display: block;
-    margin-bottom: 10px;
-  }
-  input {
-    width: 200px;
-    height: 30px;
-    margin-bottom: 20px;
-  }
-  textarea {
-    display: block;
-    margin: 0 auto 20px;
-  }
-  .contact_button {
-    width: 200px;
-    height: 30px;
-    background-color: #EE8F4F;
-    color: white;
-    font-weight: bold;
-    border: #EE8F4F;
+  .form_container {
+
+    label {
+      font-size: 1.3em;
+      color: #EE8F4F;
+      display: block;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 20%;
+      height: 10%;
+      margin-bottom: 20px;
+    }
+    textarea {
+      display: block;
+      margin: 0 auto 20px;
+      width: 20%;
+      height: 40%;
+    }
+    .contact_button {
+      width: 200px;
+      height: 30px;
+      background-color: #EE8F4F;
+      color: white;
+      font-weight: bold;
+      border: #EE8F4F;
+    }
   }
 }

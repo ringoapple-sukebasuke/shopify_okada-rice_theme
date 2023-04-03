@@ -1,25 +1,27 @@
 <h1 class="contact_title">{{ page.title }}</h1>
 
 <div class="form_contact">
-  {% form 'contact' %}
-    {% if form.posted_successfully? %} Thank you for your contact {% endif %}
-    {{ form.errors | default_errors }}
-    <div class="contact_name">
-      <label for="ContactFormName">名前</label>
-      <input type="text" id="ContactFormName" name="contact[name]">
-    </div>
-    <div class="contact_email">
-      <label for="ContactFormEmail">メールアドレス</label>
-      <input type="email" id="ContactFormEmail" name="contact[email]">
-    </div>
-    <div class="contact_number">
-      <label for="ContactFormPhone">電話番号</label>
-      <input type="tel" id="ContactFormPhone" name="contact[phone]">
-    </div>
-    <div class="contact_text">
-      <label for="ContactFormMessage">お問い合わせ内容</label>
-      <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
-      <input class="contact_button" type="submit" value="送信する">
-    </div>
-  {% endform %}
+  <div class="form_container">
+    {% form 'contact' %}
+      {% if form.posted_successfully? %} Thank you for your contact {% endif %}
+      {{ form.errors | default_errors }}
+      <div class="contact_name">
+        <label for="ContactFormName">名前</label>
+        <input type="text" id="ContactFormName" name="contact[name]">
+      </div>
+      <div class="contact_email">
+        <label for="ContactFormEmail">メールアドレス</label>
+        <input type="email" id="ContactFormEmail" name="contact[email]">
+      </div>
+      <div class="contact_number">
+        <label for="ContactFormPhone">電話番号</label>
+        <input type="tel" id="ContactFormPhone" name="contact[phone]">
+      </div>
+      <div class="contact_text">
+        <label for="ContactFormMessage">お問い合わせ内容</label>
+        <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
+        <input class="contact_button" type="submit" value="送信する">
+      </div>
+    {% endform %}
+  </div>
 </div>
