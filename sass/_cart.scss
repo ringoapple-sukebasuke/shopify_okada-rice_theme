@@ -27,15 +27,15 @@
             margin-right: 30px;
           }
           .cart_item_price {
-            font-size: 2em;
+            font-size: 1.5em;
             margin-right: 30px;
           }
           .cart_item_remove {
             background-color: white;
             margin-right: 30px;
             a {
-              font-size: 20px;
-              width: 150px;
+              font-size: 15px;
+              width: 110px;
               background-color:white;
               display: block;
               text-align: center;
@@ -47,7 +47,7 @@
     .cart_payment {
       border-top: 2px solid #eee;
       .total_price {
-        font-size: 2em;
+        font-size: 1.5em;
         color: #EE8F4F;
         text-align: center;
       }
