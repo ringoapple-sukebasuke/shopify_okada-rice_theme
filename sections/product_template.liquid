@@ -1,0 +1,86 @@
+<section>
+
+  <section>
+    <h2>Images</h2>
+    <div>
+      {% assign get_sec_image = false %}
+
+      {% for block in section.blocks limit: section.blocks.size %}
+        {% if block.settings.image_picker != blank %}
+          {% assign get_sec_image = true %}
+          {{ block.settings.image_picker | img_url: '300×' | img_tag }}
+        {% endif %}
+      {% endfor %}
+
+      {% if get_sec_image == false %}
+        <p>Nothing image.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <br><hr><br>
+
+  {% if section.settings.is_visible %}
+    <section>
+      <h2>Text</h2>
+      {% if section.settings.text != blank %}
+        <p>{{ section.settings.text }}</p>
+      {% endif %}
+    </section>
+  {% endif %}
+
+</section>
+
+
+
+{% schema %}
+{
+  "name": "サンプルセクション",
+  "class": "sample_section",
+  "blocks": [
+    {
+      "type": "custom",
+      "name": {
+        "ja": "画像"
+      },
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": {
+            "ja": "画像"
+          }
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "is_visivle",
+      "label": {
+        "ja": "表示する？"
+      },
+      "info": {
+        "ja": "チェックを入れると表示、外すと非表示になります。"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": {
+        "ja": "本文"
+      },
+      "default": {
+        "ja": "default text. default text."
+      }
+    }
+  ],
+  "presets": [
+    {
+      "name": "サンプルセクション"
+    }
+  ]
+}
+{% endschema %}
